@@ -20,3 +20,12 @@ expose:
   Annotations:
     helm.sh/hook: post-install,post-upgrade
     helm.sh/hook-delete-policy: hook-succeeded
+kafka:
+  prometheus:
+    operator:
+      enabled: false
+
+prometheus:
+  operator:
+    enabled: false        
+
