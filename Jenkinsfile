@@ -13,7 +13,7 @@ pipeline {
       steps {
         container('maven') {
           dir('env') {
-            //sh 'jx step helm build' -> this fails on the kafka chart
+            sh 'jx step helm build'
           }
         }
       }
@@ -25,7 +25,7 @@ pipeline {
       steps {
         container('maven') {
           dir('env') {
-            sh 'jx step helm apply'
+          sh 'jx step helm apply'
           }
         }
       }
